@@ -182,7 +182,7 @@ function Magicien(nom, att, def, sante, vit, mana, regMana) {
 
   this.combat = function(cible){
     if(this.sante < (sante*50)/100 && this.mana >= 10){
-      console.log("==> " + this.name + " lance \"soin\" !");
+      console.log("==> " + this.name + "(" + this.sante + "PV) lance \"soin\" !");
       this.mana -= 10;
       this.sante += 10;
       console.log(this.sante + "PV et " + this.mana + "mana");
